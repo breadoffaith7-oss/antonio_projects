@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Antonio M. Lemba — Applied AI Portfolio</title>
+  <meta name="description" content="Antonio M. Lemba — enterprise IT professional and Applied AI builder. AI products, LLM applications and research." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%233b5bdb'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__brand">Antonio&nbsp;M.&nbsp;Lemba</a>
+      <nav class="nav__links">
+        <a href="#vision">Vision</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="nav__cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero__inner hero__grid">
+        <div class="hero__text">
+          <p class="eyebrow">Applied AI &middot; Enterprise AI Integration</p>
+          <h1>Building with AI &mdash;<br />and building it responsibly.</h1>
+          <p class="hero__lead">
+            I&rsquo;m Antonio M. Lemba, an enterprise IT professional with over a decade of
+            experience advising and building technology for large international companies.
+            For the past few years, my focus &mdash; and my passion &mdash; has been
+            Artificial Intelligence.
+          </p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View my AI projects</a>
+            <a href="#contact" class="btn btn--ghost">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero__photo">
+          <span class="hero__photo-fallback">AML</span>
+          <img src="images/profile.png" alt="Antonio M. Lemba" onerror="this.remove()" />
+        </div>
+      </div>
+    </section>
+
+    <!-- VISION -->
+    <section id="vision" class="section">
+      <div class="container">
+        <p class="section__tag">My Vision</p>
+        <h2>Why AI, and why responsibly</h2>
+        <div class="prose">
+          <p>
+            For over ten years I built and advised on enterprise technology for large
+            international companies. A few years ago I found the work I want to do for the
+            rest of my career: Artificial Intelligence.
+          </p>
+          <p>
+            I believe AI is the most important technology of our generation &mdash; and
+            that it has to be built and deployed <strong>responsibly</strong>. That
+            conviction drives everything I do. At <strong>AXA</strong> I evaluate where AI
+            can genuinely add value across insurance and SAP processes. In my own time I
+            design and ship LLM-based products. And together with Prof.&nbsp;Dr.&nbsp;Philippe
+            Tamla I work on AI research.
+          </p>
+          <p>
+            As a native Lingala speaker, one part of that research is personal: helping
+            modern language models understand under-resourced African languages, so that
+            the next generation of AI speaks to more of the world.
+          </p>
+          <p class="prose__highlight">
+            My goal is simple &mdash; to keep going deeper: from integrating AI, to shaping
+            how it works.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section section--alt">
+      <div class="container">
+        <p class="section__tag">Projects</p>
+        <h2>AI products I have designed and built</h2>
+        <p class="section__intro">
+          A selection of LLM-based applications I built end to end &mdash; from idea and
+          architecture to a live, deployed product.
+        </p>
+
+        <div class="grid">
+
+          <article class="card">
+            <h3>SnapBill.ch</h3>
+            <p>
+              Web app for creating Swiss QR invoices automatically. Upload a photo or PDF
+              of an existing invoice &mdash; AI extracts the data and generates the final
+              QR invoice as a PDF.
+            </p>
+            <div class="tags">
+              <span>Next.js</span><span>TypeScript</span><span>Claude Vision</span>
+              <span>swissqrbill</span>
+            </div>
+            <a class="card__link" href="https://snapbill.ch" target="_blank" rel="noopener">
+              Visit live &rarr;
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Harvflow</h3>
+            <p>
+              SaaS tool for structured lead generation for local service providers.
+              Researches and assesses online presence and prepares AI-generated,
+              legally compliant first-contact drafts.
+            </p>
+            <div class="tags">
+              <span>Next.js</span><span>Firebase</span><span>Claude</span>
+              <span>DeepSeek</span><span>Stripe</span>
+            </div>
+            <a class="card__link" href="https://harvflow.com" target="_blank" rel="noopener">
+              Visit live &rarr;
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Polyglot Duo</h3>
+            <p>
+              Real-time translator for conversations between two languages: automatic
+              speaker and language detection, translation and natural speech output.
+              Installable as an app.
+            </p>
+            <div class="tags">
+              <span>React 19</span><span>Gemini Live API</span>
+              <span>OpenAI Realtime</span><span>WebRTC</span>
+            </div>
+            <a class="card__link" href="https://polyglotduo.vercel.app" target="_blank" rel="noopener">
+              Visit live &rarr;
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Pentaspeak</h3>
+            <p>
+              Progressive Web App for live simultaneous interpretation at events.
+              Listeners join via a QR code or channel code and receive the translation
+              as streaming text.
+            </p>
+            <div class="tags">
+              <span>Next.js</span><span>Firebase</span><span>Gemini</span>
+              <span>OpenAI Realtime</span>
+            </div>
+            <a class="card__link" href="https://pentaspeak.app" target="_blank" rel="noopener">
+              Visit live &rarr;
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Super QR Code Generator</h3>
+            <p>
+              Platform for dynamic QR codes with live scan analytics, heatmaps,
+              AI-generated artwork and team features &mdash; 18 QR code types.
+            </p>
+            <div class="tags">
+              <span>Next.js</span><span>Firebase</span><span>Gemini</span>
+              <span>Stripe</span><span>Sentry</span>
+            </div>
+            <a class="card__link" href="https://www.super-qr-code-generator.com" target="_blank" rel="noopener">
+              Visit live &rarr;
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>fruchtdigital.ch</h3>
+            <p>
+              Multilingual website for a web and digital agency &mdash; design,
+              structure and front-end implementation.
+            </p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <a class="card__link" href="https://fruchtdigital.ch" target="_blank" rel="noopener">
+              Visit live &rarr;
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research" class="section">
+      <div class="container">
+        <p class="section__tag">Research &amp; Collaboration</p>
+        <h2>Bringing African languages into AI</h2>
+        <div class="research">
+          <p>
+            I collaborate with <strong>Prof.&nbsp;Dr.&nbsp;Philippe&nbsp;Tamla</strong>
+            &mdash; Professor of Data Science and Artificial Intelligence, with a focus on
+            Information Extraction, NLP and LLM-based applications &mdash; on joint AI
+            projects.
+          </p>
+          <p>
+            Our current project extends real-time translation technology to
+            <strong>under-resourced African languages such as Igbo and Lingala</strong>.
+            The goal is to integrate African languages more deeply into AI- and LLM-based
+            translation &mdash; an area that today&rsquo;s models still serve poorly.
+          </p>
+          <p class="research__status">Status: in active development</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <p class="section__tag">Skills</p>
+        <h2>What I work with</h2>
+        <div class="skills">
+          <div class="skills__group">
+            <h3>Applied AI</h3>
+            <div class="tags">
+              <span>Anthropic Claude API</span><span>Claude Vision</span>
+              <span>Google Gemini</span><span>OpenAI Realtime</span>
+              <span>AI product design</span><span>AI use-case evaluation</span>
+              <span>Prompt engineering</span>
+            </div>
+          </div>
+          <div class="skills__group">
+            <h3>Web &amp; Full-Stack</h3>
+            <div class="tags">
+              <span>TypeScript</span><span>React</span><span>Next.js</span>
+              <span>Node.js</span><span>Firebase</span><span>Tailwind CSS</span>
+              <span>Stripe</span><span>Vercel</span>
+            </div>
+          </div>
+          <div class="skills__group">
+            <h3>Enterprise &amp; SAP</h3>
+            <div class="tags">
+              <span>ABAP / ABAP OO</span><span>ABAP RAP</span><span>OData</span>
+              <span>SAP MM / SD / PM / HCM</span><span>SAP IS-U</span>
+              <span>Requirements &amp; solution design</span>
+            </div>
+          </div>
+          <div class="skills__group">
+            <h3>Growing</h3>
+            <div class="tags">
+              <span>Python</span><span>Machine Learning foundations</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <p class="section__tag">Contact</p>
+        <h2>Let&rsquo;s talk</h2>
+        <p class="section__intro">
+          Open to roles and collaborations at the intersection of enterprise technology
+          and Applied AI.
+        </p>
+        <div class="contact">
+          <a class="contact__item" href="mailto:antonio.antonio@outlook.ch">
+            <span class="contact__label">Email</span>
+            <span class="contact__value">antonio.antonio@outlook.ch</span>
+          </a>
+          <a class="contact__item" href="https://github.com/breadoffaith7-oss" target="_blank" rel="noopener">
+            <span class="contact__label">GitHub</span>
+            <span class="contact__value">github.com/breadoffaith7-oss</span>
+          </a>
+          <div class="contact__item">
+            <span class="contact__label">Location</span>
+            <span class="contact__value">Winterthur, Switzerland</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Antonio M. Lemba &middot; Applied AI Portfolio</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
